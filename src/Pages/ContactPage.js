@@ -19,7 +19,7 @@ function ContactPage() {
           <ContactPageStyled>
           <InnerLayout className={'contact-section'}>
             
-         <div className="left-content">
+         {/* <div className="left-content">
            <div className="contact-title">
              <h4>Get In Touch</h4>
            </div>
@@ -40,16 +40,16 @@ function ContactPage() {
    <div className="form-field">
      <label for="text-area">Enter your Message *</label>
      <textarea name="textarea" id="textarea" cols="30" row="10"></textarea>
-     </div>  
+     </div>   */}
      {/* <div className="form-field form-button">
        <PrimaryButton title={'Send Email'} />
        </div>        */}
-           </form>
-         </div>
+           {/* </form>
+         </div> */}
          <div className="right-content">
          <ContactItem title={'Phone'} icon={phone} contact1={'6360637581'} />
          <ContactItem title={'Email'} icon={email} contact1={'archu.it11@gmail.com'} />
-         <ContactItem title={'Address'} icon={location} contact1={'#567/6 3rd main 14th Cross NRI Layout, Bangalore '}/>
+         <ContactItem title={'Address'} icon={location} contact1={'#567/6 3rd main 14th Cross Ramamurthy Nagar, NRI Layout, Bangalore '}/>
        
          
          </div>
@@ -77,6 +77,7 @@ const ContactPageStyled = styled.section`
     grid-template-columns: repeat(1, 1fr);
     @media screen and (max-width: 502px){
    width: 70%;
+   /* margin-bottom:10px; */
 }
       }
     .contact-title{

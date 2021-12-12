@@ -19,13 +19,13 @@ function HomePage() {
              and professional growth should be tandem with the organization
         </p>
         <div className="icons">
-            <a href="https://twitter.com/Archana01179986?s=08" className=" icon i-facebook">
+            <a href="https://twitter.com/Archana01179986?s=08" target="_blank" className=" icon i-facebook"  rel="noreferrer">
                 <TwitterIcon/>
             </a>
-            <a href="https://github.com/Archana636/task0001" className="icon i-github">
+            <a href="https://github.com/Archana636" target="_blank" className="icon i-github"  rel="noreferrer">
                 <GithubIcon/>
             </a>
-            <a href="https://www.linkedin.com/in/archana-k-68a532209" className="icon i-linkedin">
+            <a href="https://www.linkedin.com/in/archana-k-68a532209" target="_blank" className="icon i-linkedin"  rel="noreferrer">
                 <LinkedinIcon/>
             </a>
       </div>
