@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import resume from '../img/resume.jpeg';
-import { Button } from 'react-bootstrap';
+// import { Button } from 'react-bootstrap';
 // import PrimaryButton from './PrimaryButton';
-import GetAppIcon from '@material-ui/icons/GetApp';
+// import GetAppIcon from '@material-ui/icons/GetApp';
 
 
 
@@ -17,10 +17,11 @@ function ImageSection() {
             </div>
             <div className="right-content">
             <h4>Archana <span>  K</span></h4>
-             <p className="paragraph">
+             {/* <p className="paragraph">
              Seeking to join an organization, this will utilize my abilities to the maximum, while providing me a wide exposure, sufficient responsibilities, independence of thoughts and opportunity to learn. My personal and professional
               growth should be tandem with the organization.
-         </p>
+         </p> */}
+
          <div className="about-info">
          <div className="info-title">
              <p>Full Name</p>
@@ -50,7 +51,7 @@ function ImageSection() {
         
           title={'Download '}icon={<GetAppIcon/>}/> */}
          {/* <PrimaryButton */}
-            <a className='btn btn-primary' rel="noreferrer" href='https://drive.google.com/file/d/1P-S6k-XyGb7Isdvyd--yyH3uC0s545y2/view?usp=sharing' target='_blank'><Button>Download <GetAppIcon/> </Button> </a>
+            {/* <a className='btn btn-primary' rel="noreferrer" href='https://drive.google.com/file/d/1P-S6k-XyGb7Isdvyd--yyH3uC0s545y2/view?usp=sharing' target='_blank'><Button>Download <GetAppIcon/></Button> </a> */}
             
           </div>
            
@@ -71,7 +72,7 @@ margin-top: 4rem;
  }
 .left-content{
     width: 50%;
-    /* height: 60vh; */
+    height: 100vh;
     img{
         width: 90%;
         height: 65%;

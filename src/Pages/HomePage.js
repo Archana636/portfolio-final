@@ -1,9 +1,11 @@
 import React from 'react'
 import styled from 'styled-components';
-import TwitterIcon from '@material-ui/icons/Twitter';
-import GithubIcon from '@material-ui/icons/GitHub';
-import LinkedinIcon from '@material-ui/icons/LinkedIn';
+// import TwitterIcon from '@material-ui/icons/Twitter';
+// import GithubIcon from '@material-ui/icons/GitHub';
+// import LinkedinIcon from '@material-ui/icons/LinkedIn';
 import Particle from '../Components/Particles';
+import GetAppIcon from '@material-ui/icons/GetApp';
+import { Button } from 'react-bootstrap';
 
 
 function HomePage() {
@@ -14,20 +16,19 @@ function HomePage() {
             </div>
             <div className="typography">
        <h1>Hi, <span>I'am Archana</span></h1>
-        <p>Seeking to join an organization, this will utilize my abilities to the maximum, while providing me a wide exposure, 
-            sufficient responsibilities, independence of thoughts and opportunity to learn. My personal
-             and professional growth should be tandem with the organization
+        <p>Goal oriented full stack developer, Passion for working on a project that solves problems with thoughtful UI design, creating intuitive, dynamic user experiences powered by strong backend. I primarily work with MERN stack among the full stack technologies.
         </p>
         <div className="icons">
-            <a href="https://twitter.com/Archana01179986?s=08" target="_blank" className=" icon i-facebook"  rel="noreferrer">
+            {/* <a href="https://twitter.com/Archana01179986?s=08" target="_blank" className=" icon i-facebook"  rel="noreferrer">
                 <TwitterIcon/>
-            </a>
-            <a href="https://github.com/Archana636" target="_blank" className="icon i-github"  rel="noreferrer">
+            </a> */}
+            {/* <a href="https://github.com/Archana636" target="_blank" className="icon i-github"  rel="noreferrer">
                 <GithubIcon/>
-            </a>
-            <a href="https://www.linkedin.com/in/archana-k-68a532209" target="_blank" className="icon i-linkedin"  rel="noreferrer">
+            </a> */}
+            {/* <a href="https://www.linkedin.com/in/archana-k-68a532209" target="_blank" className="icon i-linkedin"  rel="noreferrer">
                 <LinkedinIcon/>
-            </a>
+            </a> */}
+            <a className='btn btn-primary' rel="noreferrer" href='https://drive.google.com/file/d/1DcYUH66Wb7ZJRq5yrZsn93dSr-NYT57I/view?usp=sharing' target='_blank'><Button>Resume<GetAppIcon/></Button></a>
       </div>
             </div>
         </HomePageStyled>
@@ -39,7 +40,7 @@ const HomePageStyled = styled.header`
  height: 100vh;
 position: relative;
 
-@media screen and (max-width: 520px){
+@media screen and (max-width: 1200px){
   h1{
       font-size: 10px;
      
@@ -66,6 +67,7 @@ position: relative;
          display: flex;
          justify-content: center;
          margin-top:1rem ;
+         /* margin-bottom:8rem; */
          .icon{
 border: 2px solid var(--border-color);
 display: flex;

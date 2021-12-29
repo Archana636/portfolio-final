@@ -25,9 +25,12 @@ const ContactItemStyled = styled.div`
   background-color: var(--background-dark-color);
   display: flex;
   align-items: center;
- &:not(:last-child){
-    margin-bottom:2.5rem ;
- }
+  margin-top:1px;
+  overflow: hidden;
+ /* &:not(:last-child){
+    margin-bottom:4rem ;
+   
+ } */
 
   .left-content{
     padding: 1.5rem;   
@@ -37,19 +40,28 @@ const ContactItemStyled = styled.div`
    align-items: center;
    justify-content: center;
    margin-right: 1.5rem;
-
+   /* overflow: hidden; */
+       height: 60%;
    svg{
-       font-size: 2.3rem;
+       font-size: 2rem;
+       overflow: hidden;
    }
+  }
+  .left-content ,icon{
+    height: 10px;
+
   }
   .right-content{
       h6{
           color: var(--white-color);
           font-size: 1.2rem;
-          padding-bottom: .6rem;
+          padding-bottom: .7rem;
+          line-height: 70%;
       }
       p{
-         padding : .1rem 0;
+         padding : .2rem 0;
+         overflow: hidden;
+         line-height: 120%;
       }
   }
 `;

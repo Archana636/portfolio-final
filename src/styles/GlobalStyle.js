@@ -22,7 +22,7 @@ const GlobalStyle = createGlobalStyle`
     --scrollbar-track-color: #383838;
 } */
 
-.light-theme{
+/* .light-theme{
     --primary-color:#007bff ;
     --primary-color-light: #057fff;
     --secondary-color: #6c757d;
@@ -40,7 +40,7 @@ const GlobalStyle = createGlobalStyle`
     --scrollbar-bg-color: #383838;
     --scrollbar-thump-color: #6b6b6b;
     --scrollbar-track-color: #383838;
-}
+} */
 .dark-theme{
     --primary-color:#007bff;
     --primary-color-light: #057fff;
@@ -117,7 +117,7 @@ color: var(--primary-color);
 
 
 //Floting Toggler
-.light-dark-mode{
+/* .light-dark-mode{
    position: fixed;
    right: 0;
    top: 50%;
@@ -134,7 +134,7 @@ color: var(--primary-color);
     font-size: 1.7rem;
     color:white;
   }
-  }
+  } */
 //Nav toggler
 .ham-burger-menu{
     position: absolute;

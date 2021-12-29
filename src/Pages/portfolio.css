@@ -96,9 +96,9 @@
     
 }
 
-/* .card-img-overlay:hover > * {
+.card-img-overlay:hover > * {
     transform: translateY(0);
-} */
+}
 
 .img-title {
     font-size: 2em;

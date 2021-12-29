@@ -6,8 +6,8 @@ import AboutPage from './Pages/AboutPage';
 import ResumePage from './Pages/ResumePage';
 import PortfolioPage from './Pages/PortfolioPage';
 import ContactPage from './Pages/ContactPage';
-import Brightness4Icon from '@material-ui/icons/Brightness4';
-import Switch from '@material-ui/core/Switch'
+// import Brightness4Icon from '@material-ui/icons/Brightness4';
+// import Switch from '@material-ui/core/Switch'
 import { useState, useEffect } from "react";
 import MenuIcon from '@material-ui/icons/Menu';
 import { IconButton } from "@material-ui/core";
@@ -18,24 +18,27 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 function App() {
-const [theme, setTheme] = useState('dark-theme');
-const [checked, setChecked] = useState(false); 
+const [theme] = useState('dark-theme');
+// const [setChecked] = useState(false); 
 const [navToggle, setNavToggle] = useState(false);
 ;
 useEffect(() => {
  document.documentElement.className = theme;
 }, [theme]);
 
-const themeToggler = () =>{
-if(theme === 'light-theme'){
- setTheme('dark-theme');
- setChecked(false)
-}else{
-  setTheme('light-theme');
-  setChecked(true)
-}
-}
 
+// const themeToggler = () =>{
+// if(theme === 'light-theme'){
+//  setTheme('dark-theme');
+//  setChecked(true)
+// }
+// else{
+//   setTheme('light-theme');
+//   setChecked(true)
+// }
+//  }
+
+ 
   return (
     <div className="App">
     <Sidebar navToggle={navToggle} />
@@ -43,9 +46,9 @@ if(theme === 'light-theme'){
    <div className="theme">
    <div className="light-dark-mode">
   <div className="left-content">
-    <Brightness4Icon/>
+    {/* <Brightness4Icon/> */}
   </div>
-  <div className="right-content">
+  {/* <div className="right-content">
     <Switch 
     value=""
      checked={checked}
@@ -53,7 +56,8 @@ if(theme === 'light-theme'){
     size="medium"
     onClick={themeToggler}
     />
-  </div>
+  </div> */}
+  
 </div>
    </div>
 
@@ -117,8 +121,6 @@ min-height: 100vh;
     background-color: var(--border-color);
 
   }
-
-  
 }
 `;
 

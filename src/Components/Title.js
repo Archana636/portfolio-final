@@ -42,7 +42,7 @@ h2{
         position: absolute;
         bottom: 0;
         width: 3.5rem;
-        height: .33rem;
+        height: .rm;
         background-color: var(--primary-color);
         border-radius: 15px;
         left: 0;

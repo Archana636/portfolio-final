@@ -7,6 +7,10 @@ import PhoneIcon from '@material-ui/icons/Phone';
 import EmailIcon from '@material-ui/icons/Email';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import ContactItem from '../Components/ContactItem';
+// import EmailIcon from '@material-ui/icons/Email';
+// import MobileScreenShareIcon from '@material-ui/icons/MobileScreenShare';
+// import LocationOnIcon from '@material-ui/icons/LocationOn';
+
 
 function ContactPage() {
   const phone = <PhoneIcon/>
@@ -18,72 +22,60 @@ function ContactPage() {
           <Title title={'Contact'} span={'Contact'}/>
           <ContactPageStyled>
           <InnerLayout className={'contact-section'}>
-            
-         {/* <div className="left-content">
-           <div className="contact-title">
-             <h4>Get In Touch</h4>
-           </div>
-           <form  className="form">
-              <div className="form-field">
- <label for="name">Enter your Name*</label>
- <input type="text" id="name" name="name"/>
- 
-            </div> 
-            <div className="form-field">
- <label for="name" >Enter your Email *</label>
- <input type="email" id="email"/>
-            </div> 
-            <div className="form-field">
- <label for="name" >Enter your Subject*</label>
- <input type="text" id="subject"/>
-            </div> 
-   <div className="form-field">
-     <label for="text-area">Enter your Message *</label>
-     <textarea name="textarea" id="textarea" cols="30" row="10"></textarea>
-     </div>   */}
-     {/* <div className="form-field form-button">
-       <PrimaryButton title={'Send Email'} />
-       </div>        */}
-           {/* </form>
-         </div> */}
+
          <div className="right-content">
-         <ContactItem title={'Phone'} icon={phone} contact1={'6360637581'} />
-         <ContactItem title={'Email'} icon={email} contact1={'archu.it11@gmail.com'} />
-         <ContactItem title={'Address'} icon={location} contact1={'#567/6 3rd main 14th Cross Ramamurthy Nagar, NRI Layout, Bangalore '}/>
-       
+           <ContactItem title={'Phone'} icon={phone} contact1={'+91-6360637581'} />
+           <ContactItem title={'Email'} icon={email} contact1={'archu.it11@gmail.com'} />
+           <ContactItem title={'Address'} icon={location} contact1={'#567/6 3rd main 14th Cross Ramamurthy Nagar, NRI Layout, Bangalore '}/>
+            </div>
          
-         </div>
+         
         </InnerLayout>
           </ContactPageStyled>
         </MainLayout>
     )
 }
 
-const ContactPageStyled = styled.section`
+ const ContactPageStyled = styled.section`
+#contact{
+    /* background-color:#0c0c0c; */
+    width: 100%;
+    height:calc(10vh - 48px)50vh 72px;
+    box-sizing: border-box;
+    padding : 15px 5rem;
+    padding-top: 2.5rem;
+    color: white;
+    size:50px;
+    position: relative;
+    overflow: hidden;
+}
+.email{
+  color:white;
+  size:100px;
+}
+
 .contact-section{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 2rem ;
     @media screen and (max-width: 978px ){
     grid-template-columns: repeat(1, 1fr);
-    /* .form-button{
-       margin-bottom:2rem ;
-       
-     } */
-
+  
 }
     .right-content{
       display: grid;
+      flex-direction: column;
+     overflow: hidden;
     grid-template-columns: repeat(1, 1fr);
     @media screen and (max-width: 502px){
-   width: 70%;
-   /* margin-bottom:10px; */
+   width: 75%;
 }
       }
     .contact-title{
       color: var(--white-color);
-      padding: 1rem 0;
+      padding: 2rem 0;
       font-size: 1.8rem;
+      overflow: hidden;
     }
     .form{
       width: 100%;
