@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-components';
 // import TwitterIcon from '@material-ui/icons/Twitter';
-// import GithubIcon from '@material-ui/icons/GitHub';
+import GithubIcon from '@material-ui/icons/GitHub';
 // import LinkedinIcon from '@material-ui/icons/LinkedIn';
 import Particle from '../Components/Particles';
 import GetAppIcon from '@material-ui/icons/GetApp';
-import { Button } from 'react-bootstrap';
+// import { Button } from 'react-bootstrap';
 
 
 function HomePage() {
@@ -18,18 +18,31 @@ function HomePage() {
        <h1>Hi, <span>I'am Archana</span></h1>
         <p>Goal oriented full stack developer, Passion for working on a project that solves problems with thoughtful UI design, creating intuitive, dynamic user experiences powered by strong backend. I primarily work with MERN stack among the full stack technologies.
         </p>
-        <div className="icons">
+
+{/* <div> */}
+<a href="https://github.com/Archana636" target="_blank" className="far fa-circle" rel="noreferrer">
+                <GithubIcon/>
+            </a>
+            <a className='btn btn-primary' rel="noreferrer" href='https://drive.google.com/file/d/1K4ei8MQeAIPAZZdRCLiLppsRTnZEzPOk/view?usp=sharing' target='_blank'>Resume<GetAppIcon/></a>
+
+{/* </div> */}
+
+        {/* <div className="icons">
+        <a href="https://github.com/Archana636" target="_blank" className="far fa-circle" rel="noreferrer">
+                <GithubIcon/>
+            </a>
+            <a className='btn btn-primary' rel="noreferrer" href='https://drive.google.com/file/d/1DcYUH66Wb7ZJRq5yrZsn93dSr-NYT57I/view?usp=sharing' target='_blank'>Resume<GetAppIcon/></a>
+            </div> */}
+
+
             {/* <a href="https://twitter.com/Archana01179986?s=08" target="_blank" className=" icon i-facebook"  rel="noreferrer">
                 <TwitterIcon/>
             </a> */}
-            {/* <a href="https://github.com/Archana636" target="_blank" className="icon i-github"  rel="noreferrer">
-                <GithubIcon/>
-            </a> */}
-            {/* <a href="https://www.linkedin.com/in/archana-k-68a532209" target="_blank" className="icon i-linkedin"  rel="noreferrer">
+                       
+            {/* <a href="https://www.linkedin.com/in/archana-k-68a532209" target="_blank" className="far fa-circle"  rel="noreferrer">
                 <LinkedinIcon/>
             </a> */}
-            <a className='btn btn-primary' rel="noreferrer" href='https://drive.google.com/file/d/1DcYUH66Wb7ZJRq5yrZsn93dSr-NYT57I/view?usp=sharing' target='_blank'><Button>Resume<GetAppIcon/></Button></a>
-      </div>
+
             </div>
         </HomePageStyled>
     )
@@ -63,11 +76,19 @@ position: relative;
     span{
         font-size: 2.5rem;
     }
+    a {
+        flex:1;
+        justify-Content:inherit; 
+        padding:8px;
+        /* flex-Wrap: wrap; */
+    }
      .icons{
-         display: flex;
-         justify-content: center;
+        display: flex;
+         justify-content:center;
          margin-top:1rem ;
-         /* margin-bottom:8rem; */
+         margin-bottom:8rem;
+
+         
          .icon{
 border: 2px solid var(--border-color);
 display: flex;
@@ -76,6 +97,7 @@ justify-content: center;
 border-radius: 50%;
 transition:  all .4s ease-in-out;
 cursor: pointer;
+
 &:hover{
     border: 2px solid var(--primary-color);
     color: var(--primary-color);

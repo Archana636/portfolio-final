@@ -99,7 +99,7 @@ function Portfolio() {
                              
                               <p className='codeLinks text-center pt-3'>
                                   <a className='btn btn-primary' target='_blank' rel="noreferrer" href='https://github.com/Archana636/UniChat'>Client     <GitHubIcon/></a>
-                                  <a className='btn btn-primary' target='_blank' rel="noreferrer" href='https://github.com/Archana636/UniChat'>Server      <GitHubIcon/></a>
+                                  <a className='btn btn-primary' target='_blank' rel="noreferrer" href='https://github.com/Archana636/Unichat_Backend'>Server      <GitHubIcon/></a>
                                   <a className='btn btn-primary' target='_blank' rel="noreferrer" href='https://archu-unichat.netlify.app/'>Demo   <LinkIcon/></a>
                               </p>
                           </div>
