@@ -28,7 +28,7 @@ function HomePage() {
  <a class="block" className='btn btn-primary' rel="noreferrer" href='https://github.com/Archana636' target='_blank'>GitHub<GithubIcon/></a>
             
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        
-<a class="block" className='btn btn-primary' rel="noreferrer" href='https://drive.google.com/file/d/1K4ei8MQeAIPAZZdRCLiLppsRTnZEzPOk/view?usp=sharing' target='_blank'>Resume<GetAppIcon/></a>        
+<a class="block" className='btn btn-primary' rel="noreferrer" href='https://drive.google.com/file/d/1BUwwQXiiexpvfDz17g7fsvI--v256fI-/view?usp=sharing' target='_blank'>Resume<GetAppIcon/></a>        
 </div> 
 {/* </div> */}
 
