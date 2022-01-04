@@ -23,7 +23,7 @@ function Portfolio() {
                       <div className='img-title'>Amazonapp</div>
                       <div className='img-description'>
                           <p>Amazon is the big online we know today. You can specialize your "store", shop by various departments,
-                          read reviews, leave reviews, comment on reviews, rate items and distributors, and find the best deals availble</p>
+                          read reviews, leave reviews, comment on reviews, rate items and distributors, and find the best deals available</p>
                           <div className='tech_used'>
                               <i class="fab fa-react react"></i> &nbsp;
                               <i class="fab fa-node node"></i> &nbsp;
@@ -99,7 +99,7 @@ function Portfolio() {
                              
                               <p className='codeLinks text-center pt-3'>
                                   <a className='btn btn-primary' target='_blank' rel="noreferrer" href='https://github.com/Archana636/UniChat'>Client     <GitHubIcon/></a>
-                                  <a className='btn btn-primary' target='_blank' rel="noreferrer" href='https://github.com/Archana636/Unichat_Backend'>Server      <GitHubIcon/></a>
+                                  <a className='btn btn-primary' target='_blank' rel="noreferrer" href='https://github.com/Archana636/UniChat_Backend'>Server      <GitHubIcon/></a>
                                   <a className='btn btn-primary' target='_blank' rel="noreferrer" href='https://archu-unichat.netlify.app/'>Demo   <LinkIcon/></a>
                               </p>
                           </div>

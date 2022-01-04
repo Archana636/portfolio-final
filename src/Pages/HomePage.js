@@ -8,6 +8,7 @@ import GetAppIcon from '@material-ui/icons/GetApp';
 // import { Button } from 'react-bootstrap';
 
 
+
 function HomePage() {
     return (
         <HomePageStyled>
@@ -20,11 +21,15 @@ function HomePage() {
         </p>
 
 {/* <div> */}
-<a href="https://github.com/Archana636" target="_blank" className="far fa-circle" rel="noreferrer">
+{/* <a href="https://github.com/Archana636" target="_blank" className="far fa-circle" rel="noreferrer">
                 <GithubIcon/>
-            </a>
-            <a className='btn btn-primary' rel="noreferrer" href='https://drive.google.com/file/d/1K4ei8MQeAIPAZZdRCLiLppsRTnZEzPOk/view?usp=sharing' target='_blank'>Resume<GetAppIcon/></a>
-
+            </a> */}
+  <div class="row">         
+ <a class="block" className='btn btn-primary' rel="noreferrer" href='https://github.com/Archana636' target='_blank'>GitHub<GithubIcon/></a>
+            
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        
+<a class="block" className='btn btn-primary' rel="noreferrer" href='https://drive.google.com/file/d/1K4ei8MQeAIPAZZdRCLiLppsRTnZEzPOk/view?usp=sharing' target='_blank'>Resume<GetAppIcon/></a>        
+</div> 
 {/* </div> */}
 
         {/* <div className="icons">
@@ -52,6 +57,7 @@ const HomePageStyled = styled.header`
  width: 100%;
  height: 100vh;
 position: relative;
+/* word-spacing: 30px; */
 
 @media screen and (max-width: 1200px){
   h1{
@@ -81,6 +87,7 @@ position: relative;
         justify-Content:inherit; 
         padding:8px;
         /* flex-Wrap: wrap; */
+        word-spacing: 30px;
     }
      .icons{
         display: flex;
@@ -131,6 +138,20 @@ svg{
 }
 }
 }
+ .row {
+  width: 25%;
+  margin: 0 auto;
+}
+/*.block {
+  width: 50px;
+  float: left;
+ 
+} */
+/* .block1 {
+  width: 50px;
+  float: left;
+  padding-left: 10px;
+} */
 `;
 
 export default HomePage;
